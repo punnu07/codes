@@ -1,0 +1,24 @@
+codes
+=====
+
+k-means clustering c code
+
+
+This contains a version of k-means clustering pure C code.
+TO INSTALL
+
+Type make in the directory you downloaded the code
+
+TO RUN
+
+./knn text-feature-file number_of_rows noumber_of_cols number_of_clusters
+
+EXAMPLE 
+
+./knn data_file 10000 10 5
+
+OUTPUT 
+
+A file called centroids, which contains all the cluster centroids
+
+
