@@ -1,4 +1,4 @@
-/*                                                knn.c
+/*                                                kmeans.c
 This is kmeans clustering  implementation. Theoretically it should be able to take any amount of data, of any given dimension.
 */
 
