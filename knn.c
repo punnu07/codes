@@ -138,16 +138,14 @@ while(iteration<max_iteration)
 	current_cluster=j;
 	current_distance=cluster_distance[i][j];
 	}
-        
-	}
+       	}
         dist_sum[current_cluster]=dist_sum[current_cluster]+current_distance;
 	cluster_element_count[current_cluster]=cluster_element_count[current_cluster]+1;
 	for(j=0;j<dim;j++)
 	{
 	tmp[current_cluster][j]=tmp[current_cluster][j]+data[i][j];
 	}
-        
-	}
+       	}
 
 
        
@@ -155,25 +153,18 @@ while(iteration<max_iteration)
         // update centroids
 	for(i=0;i<k;i++)
 	{
-         
          if(cluster_element_count[i]==0)                                             // no points in that cluster
-          {
-          continue;
-          }
+         {
+         continue;
+         }
 	for(j=0;j<dim;j++)
 	{
 	cluster_centroid[i][j]=tmp[i][j]/(float)cluster_element_count[i];
 	}
-        
         printf("\nIteration %d ", iteration);
-      
-       
         dist_sum[i]=dist_sum[i]/(float)cluster_element_count[i];  	
-
 	}
-      
-      	
-	iteration=iteration+1;
+    	iteration=iteration+1;
 }// iterations
 
 
