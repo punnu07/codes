@@ -166,10 +166,7 @@ while(iteration<max_iteration)
 	}
         
         printf("\nIteration %d ", iteration);
-         for(i=0;i<k;i++)
-	{
-         printf("%d ",cluster_element_count[i]);
-	} 
+      
        
         dist_sum[i]=dist_sum[i]/(float)cluster_element_count[i];  	
 
