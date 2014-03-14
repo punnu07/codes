@@ -1,3 +1,3 @@
-knn:knn.c
-	gcc knn.c -lm -o knn
+kmeans:kmeans.c
+	gcc kmeans.c -lm -o kmeans
   
